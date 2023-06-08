@@ -1,6 +1,12 @@
 # MyFramework
 制作 Framework 并上传到 CocoaPods
 
+## 制作 framework 库
+直接在 Xcode 里 Framework & Library 里 Frameworks 创建一个 target     </br> 
+就像 DioFramework      </br> 
+创建成功后 在 这个 target --> Build Phases --> Headers 里暴露出外界可以引用的头文件
+
+## 上传 framework 到 cocoapods 仓库
 ### 注册Trunkpod (注册过就不需要注册了)
 trunk register 邮箱 '用户名' --description='描述'
 
