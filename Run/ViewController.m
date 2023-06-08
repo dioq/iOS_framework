@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <MyFramework/Test.h>
+#import <MyFramework/MyTest.h>
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    Test *test = [Test new];
-    [test helloworld];
+    MyTest *test = [MyTest new];
+    [test PrintTest];
 }
 
 

@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A627A492A30CC67007592F5 /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A627A482A30CC67007592F5 /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A627A512A30CC9D007592F5 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A627A4F2A30CC9D007592F5 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A627A522A30CC9D007592F5 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627A502A30CC9D007592F5 /* Test.m */; };
+		3A627A522A30CC9D007592F5 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627A502A30CC9D007592F5 /* MyTest.m */; };
 		3A627A5B2A30CCE5007592F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627A5A2A30CCE5007592F5 /* AppDelegate.m */; };
 		3A627A5E2A30CCE5007592F5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627A5D2A30CCE5007592F5 /* SceneDelegate.m */; };
 		3A627A612A30CCE5007592F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627A602A30CCE5007592F5 /* ViewController.m */; };
@@ -19,6 +18,7 @@
 		3A627A6C2A30CCE7007592F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627A6B2A30CCE7007592F5 /* main.m */; };
 		3A627A712A30CD20007592F5 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A627A452A30CC67007592F5 /* MyFramework.framework */; };
 		3A627A722A30CD20007592F5 /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A627A452A30CC67007592F5 /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A627A762A31BF8C007592F5 /* MyTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A627A4F2A30CC9D007592F5 /* MyTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,8 @@
 /* Begin PBXFileReference section */
 		3A627A452A30CC67007592F5 /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A627A482A30CC67007592F5 /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
-		3A627A4F2A30CC9D007592F5 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		3A627A502A30CC9D007592F5 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		3A627A4F2A30CC9D007592F5 /* MyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTest.h; sourceTree = "<group>"; };
+		3A627A502A30CC9D007592F5 /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		3A627A572A30CCE5007592F5 /* Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Run.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A627A592A30CCE5007592F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A627A5A2A30CCE5007592F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				3A627A482A30CC67007592F5 /* MyFramework.h */,
-				3A627A4F2A30CC9D007592F5 /* Test.h */,
-				3A627A502A30CC9D007592F5 /* Test.m */,
+				3A627A4F2A30CC9D007592F5 /* MyTest.h */,
+				3A627A502A30CC9D007592F5 /* MyTest.m */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A627A512A30CC9D007592F5 /* Test.h in Headers */,
 				3A627A492A30CC67007592F5 /* MyFramework.h in Headers */,
+				3A627A762A31BF8C007592F5 /* MyTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A627A522A30CC9D007592F5 /* Test.m in Sources */,
+				3A627A522A30CC9D007592F5 /* MyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

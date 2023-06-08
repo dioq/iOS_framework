@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Test : NSObject
+@interface MyTest : NSObject
 
--(void)helloworld;
+-(void)PrintTest;
 
 @end
 
