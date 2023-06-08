@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <MyFramework/MyTest.h>
+#import <DioFramework/MyTest.h>
 
 @interface ViewController ()
 

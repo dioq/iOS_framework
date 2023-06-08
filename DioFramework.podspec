@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint MyFramework.podspec' to ensure this is a
+#  Be sure to run `pod spec lint DioFramework.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "MyFramework"
-  spec.version      = "0.0.2"
-  spec.summary      = "This is MyFramework"
+  spec.name         = "DioFramework"
+  spec.version      = "0.0.1"
+  spec.summary      = "This is a test."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                    This is MyFramework only for test.
+                      This is My Framework only for test.
                    DESC
 
   spec.homepage     = "https://github.com/dioq/MyFramework"
@@ -91,7 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "MyFramework", "MyFramework/*.{h,m}"
+  spec.source_files  = "DioFramework", "DioFramework/*.{h,m}"
+  # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -118,6 +119,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
+  # spec.frameworks = "SomeFramework", "AnotherFramework"
   spec.frameworks = "UIKit", "Foundation"
 
   # spec.library   = "iconv"
