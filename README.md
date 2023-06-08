@@ -26,3 +26,6 @@ pod trunk push DioFramework.podspec --allow-warnings
 ### 注意上传前要把 git 仓库内容 push到 远程仓库,而且 tag 要和 xxx.podspec 里的 spec.version 一致
 git tag '0.0.1'   </br>
 git push --tags
+
+### pod trunk 的一些命令
+pod trunk me	查看当前账户信息包括所有上传的库
