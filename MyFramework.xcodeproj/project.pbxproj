@@ -19,6 +19,9 @@
 		3A627A832A31D285007592F5 /* DioFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A627A7C2A31D285007592F5 /* DioFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A627A892A31D2AD007592F5 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627A872A31D2AD007592F5 /* MyTest.m */; };
 		3A627A8A2A31D2AD007592F5 /* MyTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A627A882A31D2AD007592F5 /* MyTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A627AB12A32F35E007592F5 /* libDioStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A627AAF2A32F35E007592F5 /* libDioStaticLibrary.a */; };
+		3A627ABA2A32F3B2007592F5 /* DioStaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627AB92A32F3B2007592F5 /* DioStaticLibrary.m */; };
+		3A627ABB2A32F3B2007592F5 /* DioStaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A627AB82A32F3B2007592F5 /* DioStaticLibrary.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A627AB42A32F3B2007592F5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				3A627ABB2A32F3B2007592F5 /* DioStaticLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +75,11 @@
 		3A627A7E2A31D285007592F5 /* DioFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DioFramework.h; sourceTree = "<group>"; };
 		3A627A872A31D2AD007592F5 /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		3A627A882A31D2AD007592F5 /* MyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTest.h; sourceTree = "<group>"; };
+		3A627AAF2A32F35E007592F5 /* libDioStaticLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDioStaticLibrary.a; sourceTree = "<group>"; };
+		3A627AB02A32F35E007592F5 /* DioStaticLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DioStaticLibrary.h; sourceTree = "<group>"; };
+		3A627AB62A32F3B2007592F5 /* libDioStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDioStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A627AB82A32F3B2007592F5 /* DioStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DioStaticLibrary.h; sourceTree = "<group>"; };
+		3A627AB92A32F3B2007592F5 /* DioStaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DioStaticLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +87,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A627AB12A32F35E007592F5 /* libDioStaticLibrary.a in Frameworks */,
 				3A627A822A31D285007592F5 /* DioFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3A627A792A31D285007592F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A627AB32A32F3B2007592F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,8 +114,8 @@
 			children = (
 				3A627A582A30CCE5007592F5 /* Run */,
 				3A627A7D2A31D285007592F5 /* DioFramework */,
+				3A627AB72A32F3B2007592F5 /* DioStaticLibrary */,
 				3A627A462A30CC67007592F5 /* Products */,
-				3A627A702A30CD20007592F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +124,7 @@
 			children = (
 				3A627A572A30CCE5007592F5 /* Run.app */,
 				3A627A7C2A31D285007592F5 /* DioFramework.framework */,
+				3A627AB62A32F3B2007592F5 /* libDioStaticLibrary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +132,7 @@
 		3A627A582A30CCE5007592F5 /* Run */ = {
 			isa = PBXGroup;
 			children = (
+				3A627AAE2A32F32F007592F5 /* static_library */,
 				3A627A592A30CCE5007592F5 /* AppDelegate.h */,
 				3A627A5A2A30CCE5007592F5 /* AppDelegate.m */,
 				3A627A5C2A30CCE5007592F5 /* SceneDelegate.h */,
@@ -120,13 +148,6 @@
 			path = Run;
 			sourceTree = "<group>";
 		};
-		3A627A702A30CD20007592F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3A627A7D2A31D285007592F5 /* DioFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +156,24 @@
 				3A627A872A31D2AD007592F5 /* MyTest.m */,
 			);
 			path = DioFramework;
+			sourceTree = "<group>";
+		};
+		3A627AAE2A32F32F007592F5 /* static_library */ = {
+			isa = PBXGroup;
+			children = (
+				3A627AB02A32F35E007592F5 /* DioStaticLibrary.h */,
+				3A627AAF2A32F35E007592F5 /* libDioStaticLibrary.a */,
+			);
+			path = static_library;
+			sourceTree = "<group>";
+		};
+		3A627AB72A32F3B2007592F5 /* DioStaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				3A627AB82A32F3B2007592F5 /* DioStaticLibrary.h */,
+				3A627AB92A32F3B2007592F5 /* DioStaticLibrary.m */,
+			);
+			path = DioStaticLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +228,23 @@
 			productReference = 3A627A7C2A31D285007592F5 /* DioFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		3A627AB52A32F3B2007592F5 /* DioStaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A627ABC2A32F3B2007592F5 /* Build configuration list for PBXNativeTarget "DioStaticLibrary" */;
+			buildPhases = (
+				3A627AB22A32F3B2007592F5 /* Sources */,
+				3A627AB32A32F3B2007592F5 /* Frameworks */,
+				3A627AB42A32F3B2007592F5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DioStaticLibrary;
+			productName = DioStaticLibrary;
+			productReference = 3A627AB62A32F3B2007592F5 /* libDioStaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +258,9 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					3A627A7B2A31D285007592F5 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					3A627AB52A32F3B2007592F5 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -219,8 +278,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A627A7B2A31D285007592F5 /* DioFramework */,
 				3A627A562A30CCE5007592F5 /* Run */,
+				3A627A7B2A31D285007592F5 /* DioFramework */,
+				3A627AB52A32F3B2007592F5 /* DioStaticLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A627A892A31D2AD007592F5 /* MyTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A627AB22A32F3B2007592F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A627ABA2A32F3B2007592F5 /* DioStaticLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,12 +492,16 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Run/static_library",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.Run;
@@ -455,12 +527,16 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Run/static_library",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.Run;
@@ -499,8 +575,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.DioFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -530,7 +609,36 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.DioFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3A627ABD2A32F3B2007592F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YBWG2X244;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A627ABE2A32F3B2007592F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YBWG2X244;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -561,6 +669,15 @@
 			buildConfigurations = (
 				3A627A852A31D285007592F5 /* Debug */,
 				3A627A862A31D285007592F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A627ABC2A32F3B2007592F5 /* Build configuration list for PBXNativeTarget "DioStaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A627ABD2A32F3B2007592F5 /* Debug */,
+				3A627ABE2A32F3B2007592F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

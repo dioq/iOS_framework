@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import <DioFramework/MyTest.h>
+#import "DioStaticLibrary.h"
 
 @interface ViewController ()
 
@@ -14,13 +15,20 @@
 
 @implementation ViewController
 
-//制作过程: https://www.jianshu.com/p/910acfee9025
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+}
+
+- (IBAction)dylib_action:(UIButton *)sender {
     MyTest *test = [MyTest new];
     [test PrintTest];
 }
 
+- (IBAction)static_lib_action:(UIButton *)sender {
+    DioStaticLibrary *slib = [DioStaticLibrary new];
+    [slib testFuncForslib];
+}
 
 @end
