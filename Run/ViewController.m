@@ -6,9 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <DioFramework/MyTest.h>
 #import "DioStaticLibrary.h"
-#import <ZDLog/CurrentLog.h>
 #import <ZDNetwork/NetworkManager.h>
 #import <LZDLog/Log.h>
 
@@ -22,11 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-}
-
-- (IBAction)dylib_action:(UIButton *)sender {
-    MyTest *test = [MyTest new];
-    [test PrintTest];
 }
 
 - (IBAction)static_lib_action:(UIButton *)sender {

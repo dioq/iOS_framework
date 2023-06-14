@@ -18,31 +18,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GlG-nj-npD">
-                                <rect key="frame" x="10" y="64" width="373" height="187"/>
+                                <rect key="frame" x="10" y="64" width="373" height="145"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBJ-0i-dPi">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="43"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yB-Tc-f20">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="43" id="cCq-cc-o4z"/>
+                                            <constraint firstAttribute="height" constant="45" id="fZf-JD-eMb"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="DioFramework"/>
-                                        <connections>
-                                            <action selector="dylib_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRI-hf-TvV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yB-Tc-f20">
-                                        <rect key="frame" x="0.0" y="48" width="373" height="43"/>
-                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="DioStaticLibrary"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Static Library"/>
                                         <connections>
                                             <action selector="static_lib_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ak-zN-IyT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoJ-sN-Qgu">
-                                        <rect key="frame" x="0.0" y="96" width="373" height="43"/>
+                                        <rect key="frame" x="0.0" y="50" width="373" height="45"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="LZDLog"/>
@@ -51,7 +42,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDq-fz-R29">
-                                        <rect key="frame" x="0.0" y="144" width="373" height="43"/>
+                                        <rect key="frame" x="0.0" y="100" width="373" height="45"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="ZDNetwork"/>
