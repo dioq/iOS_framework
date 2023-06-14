@@ -28,7 +28,6 @@
 }
 
 - (IBAction)test_zdlog:(UIButton *)sender {
-//    [CurrentLog logMsg:@"This is a test from run target"];
     [Log logMsg:@"This is a test from run target"];
 }
 
