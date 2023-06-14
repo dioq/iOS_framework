@@ -1,6 +1,6 @@
 //
-//  CurrentLog.h
-//  ZDLog
+//  Log.h
+//  LZDLog
 //
 //  Created by Dio Brand on 2023/6/14.
 //
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CurrentLog : NSObject
+@interface Log : NSObject
 
 +(void)logMsg:(NSString *)msg;
 

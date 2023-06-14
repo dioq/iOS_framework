@@ -1,13 +1,13 @@
 //
-//  CurrentLog.m
-//  ZDLog
+//  Log.m
+//  LZDLog
 //
 //  Created by Dio Brand on 2023/6/14.
 //
 
-#import "CurrentLog.h"
+#import "Log.h"
 
-@implementation CurrentLog
+@implementation Log
 
 +(void)logMsg:(NSString *)msg {
     NSDate *date = [NSDate date];

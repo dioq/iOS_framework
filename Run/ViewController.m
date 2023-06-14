@@ -10,6 +10,7 @@
 #import "DioStaticLibrary.h"
 #import <ZDLog/CurrentLog.h>
 #import <ZDNetwork/NetworkManager.h>
+#import <LZDLog/Log.h>
 
 @interface ViewController ()
 
@@ -34,7 +35,8 @@
 }
 
 - (IBAction)test_zdlog:(UIButton *)sender {
-    [CurrentLog logMsg:@"This is a test from run target"];
+//    [CurrentLog logMsg:@"This is a test from run target"];
+    [Log logMsg:@"This is a test from run target"];
 }
 
 - (IBAction)zd_network:(UIButton *)sender {

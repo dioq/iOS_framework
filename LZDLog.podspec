@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint ZDLog.podspec' to ensure this is a
+#  Be sure to run `pod spec lint LZDLog.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "ZDLog"
-  spec.version      = "1.0.0"
-  spec.summary      = "打印信息时自动带上当前时间"
+  spec.name         = "LZDLog"
+  spec.version      = "1.0.1"
+  spec.summary      = "在输出前自动添加时间"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                  仅仅是一个测试,打印信息时自动带上当前时间
+  可以在打印信息前自动显示日期
                    DESC
 
   spec.homepage     = "https://github.com/dioq/MyFramework"
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ZDLog", "ZDLog/*.{h,m}"
+  spec.source_files  = "LZDLog", "LZDLog/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "Foundation"
+  spec.frameworks = "UIKit", "Foundation"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"

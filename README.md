@@ -22,6 +22,7 @@ git commit -m "desc"        </br>
 git push                    </br>
 git tag '0.0.1'             </br>
 git push --tags
+然后在 github 上发布 tag '0.0.1' ,不然验证远端会失败 </br>
 
 ### 检查.podspec是否有问题
 本地验证                </br>
