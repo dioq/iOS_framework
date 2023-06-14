@@ -8,6 +8,8 @@
 #import "ViewController.h"
 #import <DioFramework/MyTest.h>
 #import "DioStaticLibrary.h"
+#import <ZDLog/CurrentLog.h>
+#import <ZDNetwork/NetworkManager.h>
 
 @interface ViewController ()
 
@@ -18,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
 }
 
 - (IBAction)dylib_action:(UIButton *)sender {
@@ -29,6 +31,23 @@
 - (IBAction)static_lib_action:(UIButton *)sender {
     DioStaticLibrary *slib = [DioStaticLibrary new];
     [slib testFuncForslib];
+}
+
+- (IBAction)test_zdlog:(UIButton *)sender {
+    [CurrentLog logMsg:@"This is a test from run target"];
+}
+
+- (IBAction)zd_network:(UIButton *)sender {
+    NSString *urlStr = @"https://www.baidu.com/";
+    [[NetworkManager sharedManager] getUrl:urlStr success:^(id  _Nonnull response) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"%@",response);
+        });
+    } failure:^(NSError * _Nonnull error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"%@",[error localizedDescription]);
+        });
+    }];
 }
 
 @end

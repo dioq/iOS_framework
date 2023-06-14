@@ -22,6 +22,16 @@
 		3A627AB12A32F35E007592F5 /* libDioStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A627AAF2A32F35E007592F5 /* libDioStaticLibrary.a */; };
 		3A627ABA2A32F3B2007592F5 /* DioStaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627AB92A32F3B2007592F5 /* DioStaticLibrary.m */; };
 		3A627ABB2A32F3B2007592F5 /* DioStaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A627AB82A32F3B2007592F5 /* DioStaticLibrary.h */; };
+		3A90CBD02A3984F100C6CD02 /* ZDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A90CBCF2A3984F100C6CD02 /* ZDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A90CBD32A3984F100C6CD02 /* ZDLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A90CBCD2A3984F100C6CD02 /* ZDLog.framework */; };
+		3A90CBD42A3984F100C6CD02 /* ZDLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A90CBCD2A3984F100C6CD02 /* ZDLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A90CBDE2A39860C00C6CD02 /* CurrentLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A90CBDC2A39860C00C6CD02 /* CurrentLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A90CBDF2A39860C00C6CD02 /* CurrentLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A90CBDD2A39860C00C6CD02 /* CurrentLog.m */; };
+		3A90CBF52A39893800C6CD02 /* ZDNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A90CBF42A39893800C6CD02 /* ZDNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A90CBF82A39893800C6CD02 /* ZDNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A90CBF22A39893800C6CD02 /* ZDNetwork.framework */; };
+		3A90CBF92A39893800C6CD02 /* ZDNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A90CBF22A39893800C6CD02 /* ZDNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A90CBFF2A3989A100C6CD02 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A90CBFD2A3989A100C6CD02 /* NetworkManager.m */; };
+		3A90CC002A3989A100C6CD02 /* NetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A90CBFE2A3989A100C6CD02 /* NetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +41,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3A627A7B2A31D285007592F5;
 			remoteInfo = DioFramework;
+		};
+		3A90CBD12A3984F100C6CD02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A627A3C2A30CC67007592F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A90CBCC2A3984F100C6CD02;
+			remoteInfo = ZDLog;
+		};
+		3A90CBF62A39893800C6CD02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A627A3C2A30CC67007592F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A90CBF12A39893800C6CD02;
+			remoteInfo = ZDNetwork;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,6 +66,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3A627A832A31D285007592F5 /* DioFramework.framework in Embed Frameworks */,
+				3A90CBD42A3984F100C6CD02 /* ZDLog.framework in Embed Frameworks */,
+				3A90CBF92A39893800C6CD02 /* ZDNetwork.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +106,14 @@
 		3A627AB62A32F3B2007592F5 /* libDioStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDioStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A627AB82A32F3B2007592F5 /* DioStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DioStaticLibrary.h; sourceTree = "<group>"; };
 		3A627AB92A32F3B2007592F5 /* DioStaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DioStaticLibrary.m; sourceTree = "<group>"; };
+		3A90CBCD2A3984F100C6CD02 /* ZDLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZDLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A90CBCF2A3984F100C6CD02 /* ZDLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDLog.h; sourceTree = "<group>"; };
+		3A90CBDC2A39860C00C6CD02 /* CurrentLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentLog.h; sourceTree = "<group>"; };
+		3A90CBDD2A39860C00C6CD02 /* CurrentLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentLog.m; sourceTree = "<group>"; };
+		3A90CBF22A39893800C6CD02 /* ZDNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZDNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A90CBF42A39893800C6CD02 /* ZDNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDNetwork.h; sourceTree = "<group>"; };
+		3A90CBFD2A3989A100C6CD02 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		3A90CBFE2A3989A100C6CD02 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +123,8 @@
 			files = (
 				3A627AB12A32F35E007592F5 /* libDioStaticLibrary.a in Frameworks */,
 				3A627A822A31D285007592F5 /* DioFramework.framework in Frameworks */,
+				3A90CBD32A3984F100C6CD02 /* ZDLog.framework in Frameworks */,
+				3A90CBF82A39893800C6CD02 /* ZDNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +142,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A90CBCA2A3984F100C6CD02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A90CBEF2A39893800C6CD02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,6 +165,8 @@
 				3A627A582A30CCE5007592F5 /* Run */,
 				3A627A7D2A31D285007592F5 /* DioFramework */,
 				3A627AB72A32F3B2007592F5 /* DioStaticLibrary */,
+				3A90CBCE2A3984F100C6CD02 /* ZDLog */,
+				3A90CBF32A39893800C6CD02 /* ZDNetwork */,
 				3A627A462A30CC67007592F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +177,8 @@
 				3A627A572A30CCE5007592F5 /* Run.app */,
 				3A627A7C2A31D285007592F5 /* DioFramework.framework */,
 				3A627AB62A32F3B2007592F5 /* libDioStaticLibrary.a */,
+				3A90CBCD2A3984F100C6CD02 /* ZDLog.framework */,
+				3A90CBF22A39893800C6CD02 /* ZDNetwork.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +230,26 @@
 			path = DioStaticLibrary;
 			sourceTree = "<group>";
 		};
+		3A90CBCE2A3984F100C6CD02 /* ZDLog */ = {
+			isa = PBXGroup;
+			children = (
+				3A90CBCF2A3984F100C6CD02 /* ZDLog.h */,
+				3A90CBDC2A39860C00C6CD02 /* CurrentLog.h */,
+				3A90CBDD2A39860C00C6CD02 /* CurrentLog.m */,
+			);
+			path = ZDLog;
+			sourceTree = "<group>";
+		};
+		3A90CBF32A39893800C6CD02 /* ZDNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				3A90CBF42A39893800C6CD02 /* ZDNetwork.h */,
+				3A90CBFE2A3989A100C6CD02 /* NetworkManager.h */,
+				3A90CBFD2A3989A100C6CD02 /* NetworkManager.m */,
+			);
+			path = ZDNetwork;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -185,6 +259,24 @@
 			files = (
 				3A627A7F2A31D285007592F5 /* DioFramework.h in Headers */,
 				3A627A8A2A31D2AD007592F5 /* MyTest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A90CBC82A3984F100C6CD02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A90CBDE2A39860C00C6CD02 /* CurrentLog.h in Headers */,
+				3A90CBD02A3984F100C6CD02 /* ZDLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A90CBED2A39893800C6CD02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A90CBF52A39893800C6CD02 /* ZDNetwork.h in Headers */,
+				3A90CC002A3989A100C6CD02 /* NetworkManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +296,8 @@
 			);
 			dependencies = (
 				3A627A812A31D285007592F5 /* PBXTargetDependency */,
+				3A90CBD22A3984F100C6CD02 /* PBXTargetDependency */,
+				3A90CBF72A39893800C6CD02 /* PBXTargetDependency */,
 			);
 			name = Run;
 			productName = Run;
@@ -245,6 +339,42 @@
 			productReference = 3A627AB62A32F3B2007592F5 /* libDioStaticLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		3A90CBCC2A3984F100C6CD02 /* ZDLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A90CBD72A3984F100C6CD02 /* Build configuration list for PBXNativeTarget "ZDLog" */;
+			buildPhases = (
+				3A90CBC82A3984F100C6CD02 /* Headers */,
+				3A90CBC92A3984F100C6CD02 /* Sources */,
+				3A90CBCA2A3984F100C6CD02 /* Frameworks */,
+				3A90CBCB2A3984F100C6CD02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZDLog;
+			productName = ZDLog;
+			productReference = 3A90CBCD2A3984F100C6CD02 /* ZDLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3A90CBF12A39893800C6CD02 /* ZDNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A90CBFA2A39893900C6CD02 /* Build configuration list for PBXNativeTarget "ZDNetwork" */;
+			buildPhases = (
+				3A90CBED2A39893800C6CD02 /* Headers */,
+				3A90CBEE2A39893800C6CD02 /* Sources */,
+				3A90CBEF2A39893800C6CD02 /* Frameworks */,
+				3A90CBF02A39893800C6CD02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZDNetwork;
+			productName = ZDNetwork;
+			productReference = 3A90CBF22A39893800C6CD02 /* ZDNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,6 +393,12 @@
 					3A627AB52A32F3B2007592F5 = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					3A90CBCC2A3984F100C6CD02 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					3A90CBF12A39893800C6CD02 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 				};
 			};
 			buildConfigurationList = 3A627A3F2A30CC67007592F5 /* Build configuration list for PBXProject "MyFramework" */;
@@ -279,6 +415,8 @@
 			projectRoot = "";
 			targets = (
 				3A627A562A30CCE5007592F5 /* Run */,
+				3A90CBCC2A3984F100C6CD02 /* ZDLog */,
+				3A90CBF12A39893800C6CD02 /* ZDNetwork */,
 				3A627A7B2A31D285007592F5 /* DioFramework */,
 				3A627AB52A32F3B2007592F5 /* DioStaticLibrary */,
 			);
@@ -297,6 +435,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3A627A7A2A31D285007592F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A90CBCB2A3984F100C6CD02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A90CBF02A39893800C6CD02 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,6 +485,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A90CBC92A3984F100C6CD02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A90CBDF2A39860C00C6CD02 /* CurrentLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A90CBEE2A39893800C6CD02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A90CBFF2A3989A100C6CD02 /* NetworkManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -340,6 +508,16 @@
 			isa = PBXTargetDependency;
 			target = 3A627A7B2A31D285007592F5 /* DioFramework */;
 			targetProxy = 3A627A802A31D285007592F5 /* PBXContainerItemProxy */;
+		};
+		3A90CBD22A3984F100C6CD02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A90CBCC2A3984F100C6CD02 /* ZDLog */;
+			targetProxy = 3A90CBD12A3984F100C6CD02 /* PBXContainerItemProxy */;
+		};
+		3A90CBF72A39893800C6CD02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A90CBF12A39893800C6CD02 /* ZDNetwork */;
+			targetProxy = 3A90CBF62A39893800C6CD02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -651,6 +829,142 @@
 			};
 			name = Release;
 		};
+		3A90CBD52A3984F100C6CD02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.ZDLog;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3A90CBD62A3984F100C6CD02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.ZDLog;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3A90CBFB2A39893900C6CD02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.ZDNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3A90CBFC2A39893900C6CD02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.ZDNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -686,6 +1000,24 @@
 			buildConfigurations = (
 				3A627ABD2A32F3B2007592F5 /* Debug */,
 				3A627ABE2A32F3B2007592F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A90CBD72A3984F100C6CD02 /* Build configuration list for PBXNativeTarget "ZDLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A90CBD52A3984F100C6CD02 /* Debug */,
+				3A90CBD62A3984F100C6CD02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A90CBFA2A39893900C6CD02 /* Build configuration list for PBXNativeTarget "ZDNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A90CBFB2A39893900C6CD02 /* Debug */,
+				3A90CBFC2A39893900C6CD02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
