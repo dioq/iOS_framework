@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A627A7B2A31D285007592F5"
-               BuildableName = "DioFramework.framework"
-               BlueprintName = "DioFramework"
+               BlueprintIdentifier = "3A90CC052A399FF200C6CD02"
+               BuildableName = "LZDLog.framework"
+               BlueprintName = "LZDLog"
                ReferencedContainer = "container:MyFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -49,9 +49,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3A627A7B2A31D285007592F5"
-            BuildableName = "DioFramework.framework"
-            BlueprintName = "DioFramework"
+            BlueprintIdentifier = "3A90CC052A399FF200C6CD02"
+            BuildableName = "LZDLog.framework"
+            BlueprintName = "LZDLog"
             ReferencedContainer = "container:MyFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

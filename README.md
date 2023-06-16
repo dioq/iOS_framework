@@ -8,7 +8,7 @@
 
 ## 2. 上传 framework 到 cocoapods 仓库
 ### 注册Trunkpod (注册过就不需要注册了)
-trunk register 邮箱 '用户名' --description='描述'
+pod trunk register 邮箱 '用户名' --description='描述'
 
 ### 创建 pod 仓库描述文件
 pod spec create LZDLog
